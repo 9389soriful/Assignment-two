@@ -447,9 +447,12 @@
         padding: 10px 16px;
         translate: +10% -50%;
     }
-
+    .stories_body{
+        gap: 0px;
+    }
     .stories_section {
         margin: 0px 20px;
+        align-items: center;
         justify-content: center;
     }
 
