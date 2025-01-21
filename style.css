@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 140px;
+}
+
+.header .header_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    gap: 10px;
+}
+
+.header .list {
+    display: flex;
+    gap: 30px;
+
+}
+
+.header_contact .header_btn {
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 80px;
+    color: white;
+}
+
+.header_icon_btn {
+    display: none;
+}
+
+/* header responsive style start here  */
+@media screen and (max-width: 768px) {
+    .header {
+        margin: 32px 32px;
+    }
+
+    header {
+        border: 0.5px solid rgb(254, 163, 1);
+    }
+
+    .header .list {
+        display: none;
+    }
+
+    .header_contact {
+        display: none;
+    }
+
+    .header_icon_btn {
+        display: inline;
+    }
+}
+
+/* main section start here now  */
+.main .main_heading {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 140px;
+}
+
+.main .em {
+    color: rgb(254, 163, 1);
+}
+
+.main .tow {
+    color: rgb(1, 172, 253);
+    ;
+}
+
+.main .main_details {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main .main_des {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main .main_btn {
+    border-radius: 12px;
+    background: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 80px;
+}
+
+/* main responsive style start here  */
+@media screen and (max-width:768px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .main .main_details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main_icons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px 0px;
+    }
+
+    .main_icons img {
+        max-width: 100%;
+        overflow: hidden;
+    }
+}
