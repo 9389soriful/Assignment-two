@@ -383,6 +383,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     place-content: center;
+    overflow: hidden;
 }
 
 .right_card img {
